@@ -1,0 +1,16 @@
+.social {
+
+    &__content {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+
+        &-2 {
+            display: none;
+        }
+    }
+}

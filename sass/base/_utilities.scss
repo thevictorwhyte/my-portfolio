@@ -1,0 +1,37 @@
+.u-color-blue { color: $color-blue; }
+.u-color-blue-dark { color: $color-blue-dark; }
+.u-color-white { color: $color-white !important; }
+.u-color-secondary { color: $color-secondary; }
+
+.u-background-color-blue { background-color: $color-blue-2;}
+
+
+.u-font-weight-400 { font-weight: 400; }
+.u-font-weight-700 { font-weight: 700; }
+
+.u-center-text { text-align: center; }
+
+.u-margin-extrasmall { margin: 1rem; }
+.u-margin-small { margin: 2rem; }
+.u-margin-medium { margin: 8rem; }
+
+.u-margin-top-medium { margin-top: 8rem; }
+
+.u-padding-bottom-medium { padding-bottom: 6rem; }
+
+.u-footer-email {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: 700;
+    color: $color-grey-1;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-.3rem) scale(1.03);
+        text-shadow: 0 1rem 2rem rgba($color-black, .2);
+        opacity: .8;
+    }
+}
+

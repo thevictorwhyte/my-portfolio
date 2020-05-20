@@ -1,0 +1,38 @@
+.footer {
+    background-color: $color-grey-3;
+    padding-top: 3rem;
+
+    &__navigation {
+        display: block;
+        background-color: $color-blue-2;
+        text-transform: lowercase;
+        text-decoration: none;
+
+        ul {
+            list-style: none;
+
+
+            li{
+                display: inline-block;
+                margin: 1rem 2rem;
+                transition: opacity .2s;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+
+                a {
+                    text-decoration: none;
+                    font-weight: 300;
+                    font-size: 2rem;
+                    color: $color-secondary;
+
+                }
+            }
+        }
+    }
+
+    &__list {
+        text-align: center;
+    }
+}

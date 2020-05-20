@@ -1,0 +1,60 @@
+.btn {
+    color: $color-black;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    backface-visibility: hidden;
+    transition: all .3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    transition: all .2s;
+    box-shadow: 0 1rem 1rem rgba($color-black, .2);
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &:hover {
+        transform: translateY(-.5rem);
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(0);
+    }
+
+
+
+    &__text {
+        &:link,
+        &:visited {
+            color: $color-black;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 300;
+            backface-visibility: hidden;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-grey-2;
+            border-bottom: 1px solid rgba($color-blue, .8);
+            transform: scale(1.1);
+        }
+    }
+
+    &--card {
+        border: 2px solid $color-secondary;
+        color: $color-secondary;
+        transition: all .2s;
+
+        &:hover {
+            border: 2px solid $color-blue-dark;
+            color: $color-blue-dark;
+        }
+        
+    }
+}

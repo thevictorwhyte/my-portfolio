@@ -1,0 +1,121 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    // line-height: 1.7;
+    color: $color-black;
+    //padding: 2rem;
+
+}
+
+.heading-primary {
+    color: $color-black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .5rem;
+
+    // margin-bottom: 1.5rem;
+
+    &--main {
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        display: inline-block;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: rotate(3deg);
+        }
+    
+    
+        /*  animation-delay: 3s ; 
+            animation-iteration-count: 3;
+    
+        */
+    }
+    
+    &--seperator {
+        margin-right: .5rem;
+        display: inline-block;
+        animation: moveInRight 1s ease-out;
+        transition: all .3s;
+        color: $color-secondary;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-.3rem);
+        }
+    }
+    // &--sub{
+    //     display: inline;
+    //     font-size: 1.5rem;
+    //     font-weight: 700;
+    //     letter-spacing: .5rem;
+    //     animation: moveInRight 1s ease-out;
+    // }
+}
+
+.heading-secondary {
+    color: $color-black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    display: block;
+    transition: all .3s;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+
+    &--2 {
+        color: $color-white;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        display: inline-block;
+        transition: all .3s;
+        font-size: 5rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $color-grey-2;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        color: $color-blue;
+        //border-bottom: 1px solid $color-blue;
+        cursor: pointer;
+    }
+}
+
+.heading-tertiary {
+    color: $color-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+
+    &--white {
+        color: $color-secondary;
+        display: block;
+        letter-spacing: .4rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-grey-4;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    
+}

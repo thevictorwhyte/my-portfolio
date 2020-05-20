@@ -1,0 +1,73 @@
+.header {
+    @include clearfix;
+    background-color: $color-white;
+    width: 100%;
+    height: fit-content;
+    display: inline-block;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+
+    &__logo-box {
+
+    }
+
+    &-logo{
+
+    }
+
+    &__site-title {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        margin-left: 1.5rem;
+        padding: 0;
+
+    
+    }
+
+    &__navigation {
+        font-size: 1.35rem;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+        float: right;
+        position: absolute;
+        top: 1.5rem;
+        right: 0;
+        color: $color-black;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+
+    }
+
+    &__list {
+        list-style: none;
+        letter-spacing: .5rem;
+
+        &-item {
+            display: inline;
+
+            &:not(:last-child) {
+               margin: 0 3rem;
+            }
+        }
+    }
+
+    &__social {
+        display: inline-block;
+        margin-left: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        // animation-timing-function: ease-out;
+
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.04);
+        }
+    }
+
+}

@@ -12,6 +12,10 @@
     transition: all .2s;
     box-shadow: 0 1rem 1rem rgba($color-black, .2);
 
+    @include respond(tab-port) {
+        padding: .5rem .5rem;
+    }
+
     &:not(:last-child) {
         margin-right: 3rem;
     }
@@ -41,7 +45,7 @@
         &:hover,
         &:active {
             color: $color-grey-2;
-            border-bottom: 1px solid rgba($color-blue, .8);
+            border-bottom: 1px solid rgba($color-secondary, .8);
             transform: scale(1.1);
         }
     }
@@ -51,9 +55,17 @@
         color: $color-secondary;
         transition: all .2s;
 
+        @include respond(tab-port) {
+            border: 1px solid $color-secondary;
+        }
+
         &:hover {
             border: 2px solid $color-blue-dark;
             color: $color-blue-dark;
+
+            @include respond(tab-port) {
+                border: 1px solid $color-secondary;
+            }
         }
         
     }

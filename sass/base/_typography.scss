@@ -17,6 +17,11 @@ body {
     font-weight: 700;
     letter-spacing: .5rem;
 
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+    }
+
     // margin-bottom: 1.5rem;
 
     &--main {
@@ -26,6 +31,7 @@ body {
         display: inline-block;
         transition: all .3s;
         cursor: pointer;
+
 
         &:hover {
             transform: rotate(3deg);
@@ -69,6 +75,11 @@ body {
     font-weight: 400;
     letter-spacing: .5rem;
 
+    @include respond(phone) {
+        font-size: 4.5rem;
+        letter-spacing: .2rem;
+    }
+
     &--2 {
         color: $color-white;
         text-transform: uppercase;
@@ -78,6 +89,11 @@ body {
         font-size: 5rem;
         font-weight: 400;
         letter-spacing: .5rem;
+
+        @include respond(phone) {
+            font-size: 4.5rem;
+            letter-spacing: .2rem;
+        }
 
         &:hover {
             transform: scale(1.2);
@@ -102,6 +118,11 @@ body {
     font-weight: 400;
     letter-spacing: .2rem;
 
+    @include respond(phone) {
+        font-size: 1.9rem;
+        letter-spacing: .1rem;
+    }
+
     &--white {
         color: $color-secondary;
         display: block;
@@ -109,11 +130,32 @@ body {
     }
 }
 
+.heading-email {
+    color: $color-blue-2;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+
+    @include respond(tab-port) {
+        font-size: .5rem;
+        letter-spacing: .1rem;
+    }
+
+
+}
+
 .paragraph {
     font-size: 2rem;
     font-weight: 400;
     line-height: 160%;
     color: $color-grey-4;
+
+    @include respond(phone) {
+        font-size: 1.7rem;
+    }
 
     &:not(:last-child) {
         margin-bottom: 2rem;

@@ -20,11 +20,23 @@
 
 .u-margin-extrasmall { margin: 1rem; }
 .u-margin-small { margin: 2rem; }
-.u-margin-medium { margin: 8rem; }
+.u-margin-medium { 
+    margin: 8rem; 
+    @include respond(tab-port) {
+        margin: 6rem;
+    }
+}
 
 .u-margin-top-medium { margin-top: 8rem; }
 
-.u-padding-bottom-medium { padding-bottom: 6rem; }
+.u-padding-bottom-medium { 
+    padding-bottom: 6rem; 
+
+    @include respond(tab-port) {
+        padding-bottom: 4rem;
+    }
+
+}
 
 .u-margin-left-small { margin-left: 1rem; }
 .u-margin-left-medium { margin-left: 14rem; }
@@ -33,6 +45,8 @@
 .u-margin-bottom-small { margin-bottom: 4rem; }
 
 .u-box-shadow-none { box-shadow: none !important;}
+
+// .u-max-width-100 { max-width: 100% !important;}
 
 
 .u-footer-email {
@@ -43,6 +57,10 @@
     font-weight: 700;
     color: $color-grey-1;
     transition: all .3s;
+
+    @include respond(small-phone) {
+        font-size: 2rem;
+    }
 
     &:hover {
         transform: translateY(-.3rem) scale(1.03);

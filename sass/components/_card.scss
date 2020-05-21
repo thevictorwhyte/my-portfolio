@@ -106,4 +106,105 @@
         height: 6rem;
         
     }
+
+    @include respond(tab-port) {
+    height: auto;
+    background-color: $color-grey-3;
+    box-shadow: 0 2rem 4rem rgba($color-black, .4);
+    transition: all .4s;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    animation-name: scaleIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .3s;
+    
+
+
+    &__content {
+        // display: block;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__picture {
+        background-size: cover;
+        //background-blend-mode: screen;
+        background-position: center;
+        height: 26rem;
+        opacity: 1;
+        transition: all .4s;
+
+        &--1 {
+            background-image: url(../img/smart-brain.png);
+            
+        }
+
+        &--2 {
+            background-image: url(../img/crwn.png);
+            
+        }
+
+        &--3 {
+            background-image: url(../img/robofriends.png);
+            
+        }
+
+        &--4 {
+            background-image: url(../img/natours.png);
+            
+        }
+
+        &--5 {
+            background-image: url(../img/background-generator.png);
+            
+        }
+
+        // &--6 {
+        //     background-image: url(../img/robofriends.png);
+            
+        // }
+    }
+
+    &__heading {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-blue-dark;
+        display: block;
+        height: 4rem;
+
+        
+    }
+
+    &__text {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: center;
+        height: 10rem;
+        
+    }
+
+    &__tech-used {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        height: 8rem;
+    }
+
+    &__buttons {
+        display: block;
+        text-align: center;
+        height: 6rem;
+        
+    }
+
+    }
 }

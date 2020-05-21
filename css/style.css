@@ -58,7 +58,7 @@ body {
   color: #000; }
 
 .heading-primary {
-  color: #000;
+  color: #041a30;
   text-transform: uppercase;
   backface-visibility: hidden;
   display: block;
@@ -89,7 +89,7 @@ body {
       transform: translateY(-0.3rem); }
 
 .heading-secondary {
-  color: #000;
+  color: #041a30;
   text-transform: uppercase;
   backface-visibility: hidden;
   display: block;
@@ -98,7 +98,7 @@ body {
   font-weight: 400;
   letter-spacing: .5rem; }
   .heading-secondary--2 {
-    color: #ffff;
+    color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
     display: inline-block;
@@ -115,7 +115,7 @@ body {
     cursor: pointer; }
 
 .heading-tertiary {
-  color: #000;
+  color: #041a30;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
@@ -128,8 +128,9 @@ body {
     letter-spacing: .4rem; }
 
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
+  line-height: 160%;
   color: #c2c2c2; }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
@@ -141,13 +142,13 @@ body {
   color: #061d35; }
 
 .u-color-white {
-  color: #ffff !important; }
+  color: #fff !important; }
 
 .u-color-secondary {
   color: #f73030; }
 
 .u-background-color-blue {
-  background-color: #071625; }
+  background-color: #041a30; }
 
 .u-font-weight-400 {
   font-weight: 400; }
@@ -155,8 +156,14 @@ body {
 .u-font-weight-700 {
   font-weight: 700; }
 
+.u-font-size {
+  font-weight: 1.6rem; }
+
 .u-center-text {
   text-align: center; }
+
+.u-text-align-end {
+  text-align: right; }
 
 .u-margin-extrasmall {
   margin: 1rem; }
@@ -172,6 +179,21 @@ body {
 
 .u-padding-bottom-medium {
   padding-bottom: 6rem; }
+
+.u-margin-left-small {
+  margin-left: 1rem; }
+
+.u-margin-left-medium {
+  margin-left: 14rem; }
+
+.u-margin-left-large {
+  margin-left: 28rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 4rem; }
+
+.u-box-shadow-none {
+  box-shadow: none !important; }
 
 .u-footer-email {
   display: block;
@@ -199,8 +221,8 @@ body {
   animation-timing-function: ease-out;
   animation-delay: .3s; }
   .card:hover {
-    transform: translateY(-2rem) scale(1.1);
-    background-color: #ffff;
+    transform: translateY(-2rem) scale(1.05);
+    background-color: #fff;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6); }
     .card:hover .card__picture {
       opacity: 1; }
@@ -225,6 +247,7 @@ body {
       background-image: url(../img/background-generator.png); }
   .card__heading {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: .5rem;
@@ -296,8 +319,20 @@ body {
     .skill-container ul li {
       text-align: center;
       font-size: 1.8rem;
-      font-weight: 300;
+      font-weight: 400;
       padding: 1rem; }
+
+.education {
+  display: block; }
+
+.work-date {
+  display: block;
+  text-align: right;
+  margin-top: -1rem;
+  font-size: 1.6rem; }
+
+.education-date {
+  font-size: 1.6rem; }
 
 .social__content {
   width: 3rem;
@@ -314,7 +349,7 @@ body {
   padding-top: 3rem; }
   .footer__navigation {
     display: block;
-    background-color: #071625;
+    background-color: #041a30;
     text-transform: lowercase;
     text-decoration: none; }
     .footer__navigation ul {
@@ -360,7 +395,7 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  background-color: #ffff;
+  background-color: #fff;
   width: 100%;
   height: fit-content;
   display: inline-block;
@@ -384,17 +419,19 @@ body {
     float: right;
     position: absolute;
     top: 1.5rem;
-    right: 0;
+    right: 2rem;
     color: #000;
     animation-name: fadeIn;
     animation-duration: 1s; }
   .header__list {
     list-style: none;
     letter-spacing: .5rem; }
+    .header__list:last-child {
+      transform: translateY(-1rem); }
     .header__list-item {
       display: inline; }
       .header__list-item:not(:last-child) {
-        margin: 0 3rem; }
+        margin: 0 1rem; }
   .header__social {
     display: inline-block;
     margin-left: 5rem;
@@ -413,5 +450,5 @@ body {
   padding: 5rem 0; }
 
 .section-about {
-  background-color: #071625;
+  background-color: #041a30;
   padding: 5rem 0; }

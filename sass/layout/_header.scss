@@ -33,7 +33,7 @@
         float: right;
         position: absolute;
         top: 1.5rem;
-        right: 0;
+        right: 2rem;
         color: $color-black;
         animation-name: fadeIn;
         animation-duration: 1s;
@@ -43,12 +43,15 @@
     &__list {
         list-style: none;
         letter-spacing: .5rem;
+        &:last-child {
+            transform: translateY(-1rem);
+        }
 
         &-item {
             display: inline;
 
             &:not(:last-child) {
-               margin: 0 3rem;
+               margin: 0 1rem;
             }
         }
     }

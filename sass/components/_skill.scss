@@ -10,9 +10,24 @@
             li {
                 text-align: center;
                 font-size: 1.8rem;
-                font-weight: 300;
+                font-weight: 400;
                 padding: 1rem;
 
             }
         }
 } 
+
+.education {
+    display: block;
+}
+
+.work-date {
+    display: block;
+    text-align: right;
+    margin-top: -1rem;
+    font-size: 1.6rem;
+}
+
+.education-date {
+    font-size: 1.6rem;
+}

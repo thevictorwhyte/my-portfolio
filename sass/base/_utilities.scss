@@ -6,10 +6,17 @@
 .u-background-color-blue { background-color: $color-blue-2;}
 
 
+//TEXT
 .u-font-weight-400 { font-weight: 400; }
 .u-font-weight-700 { font-weight: 700; }
 
+.u-font-size { font-weight: 1.6rem; }
+
 .u-center-text { text-align: center; }
+
+.u-text-align-end { text-align: right;}
+
+//MARGINS AND PADDINGS
 
 .u-margin-extrasmall { margin: 1rem; }
 .u-margin-small { margin: 2rem; }
@@ -18,6 +25,15 @@
 .u-margin-top-medium { margin-top: 8rem; }
 
 .u-padding-bottom-medium { padding-bottom: 6rem; }
+
+.u-margin-left-small { margin-left: 1rem; }
+.u-margin-left-medium { margin-left: 14rem; }
+.u-margin-left-large { margin-left: 28rem; }
+
+.u-margin-bottom-small { margin-bottom: 4rem; }
+
+.u-box-shadow-none { box-shadow: none !important;}
+
 
 .u-footer-email {
     display: block;

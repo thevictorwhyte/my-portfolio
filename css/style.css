@@ -183,13 +183,13 @@ body {
       letter-spacing: .1rem; } }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 160%;
   color: #c2c2c2; }
   @media (max-width: 37.5em) {
     .paragraph {
-      font-size: 1.7rem; } }
+      font-size: 2.1rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 2rem; }
 
@@ -454,9 +454,12 @@ body {
     list-style: none; }
     .skill-container ul li {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       font-weight: 400;
       padding: 1rem; }
+      @media (max-width: 56.25em) {
+        .skill-container ul li {
+          font-size: 2.1rem; } }
 
 .skill-set {
   display: inline-block; }
@@ -469,12 +472,18 @@ body {
   text-align: right;
   margin-top: -1rem;
   font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .work-date {
+      font-size: 1.5rem; } }
   @media (max-width: 25em) {
     .work-date {
-      margin-top: 1rem; } }
+      margin-top: 0; } }
 
 .education-date {
   font-size: 1.6rem; }
+  @media (max-width: 56.25em) {
+    .education-date {
+      font-size: 1.5rem; } }
 
 .social__content {
   width: 3rem;
@@ -636,6 +645,9 @@ body {
       display: inline; }
       .header__list-item:not(:last-child) {
         margin: 0 1rem; }
+        @media (max-width: 56.25em) {
+          .header__list-item:not(:last-child) {
+            margin: 0 .5rem; } }
   .header__social {
     display: inline-block;
     margin-left: 5rem;

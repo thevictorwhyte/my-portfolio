@@ -13,9 +13,13 @@
 
             li {
                 text-align: center;
-                font-size: 1.8rem;
+                font-size: 2.5rem;
                 font-weight: 400;
                 padding: 1rem;
+
+                @include respond(tab-port) {
+                    font-size: 2.1rem;
+                }
 
             }
         }
@@ -35,11 +39,19 @@
     margin-top: -1rem;
     font-size: 1.6rem;
 
+    @include respond(tab-port) {
+        font-size: 1.5rem;
+    }
+
     @include respond(small-phone) {
-        margin-top: 1rem;
+        margin-top: 0;
     }
 }
 
 .education-date {
     font-size: 1.6rem;
+
+    @include respond(tab-port) {
+        font-size: 1.5rem;
+    }
 }

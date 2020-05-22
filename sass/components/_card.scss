@@ -20,6 +20,13 @@
         .card__picture {
             opacity: 1;
         }
+
+        @include respond(tab-port) {
+            transform: none;
+            background-color: inherit;
+            box-shadow: 0 2rem 4rem rgba($color-black, .4);
+        }
+
     }
 
 
@@ -90,7 +97,7 @@
     &__text {
         display: block;
         font-size: 1.8rem;
-        margin: 1rem 0;
+        margin: 1rem 2rem;
         font-weight: 300;
         text-align: center;
         height: auto;

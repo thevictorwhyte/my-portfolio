@@ -47,6 +47,10 @@
             color: $color-grey-2;
             border-bottom: 1px solid rgba($color-secondary, .8);
             transform: scale(1.1);
+
+            @include respond(tab-port) {
+                transform: none;
+            }
         }
     }
 

@@ -361,17 +361,19 @@ body {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
   @media (max-width: 56.25em) {
     .btn {
-      padding: .5rem .5rem; }
-      .btn:hover {
-        transform: none; }
-      .btn:active, .btn:focus {
-        transform: none; } }
+      padding: .5rem .5rem; } }
   .btn:not(:last-child) {
     margin-right: 3rem; }
   .btn:hover {
     transform: translateY(-0.5rem); }
+    @media (max-width: 56.25em) {
+      .btn:hover {
+        transform: none; } }
   .btn:active, .btn:focus {
     transform: translateY(0); }
+    @media (max-width: 56.25em) {
+      .btn:active, .btn:focus {
+        transform: none; } }
   .btn__text:link, .btn__text:visited {
     color: #000;
     display: inline-block;
@@ -410,9 +412,6 @@ body {
     .btn--card:hover {
       border: 2px solid #061d35;
       color: #061d35; }
-      @media (max-width: 56.25em) {
-        .btn--card:hover {
-          border: 1px solid #f73030; } }
 
 .skill-container {
   padding: 1rem;

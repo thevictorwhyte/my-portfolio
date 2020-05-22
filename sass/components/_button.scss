@@ -29,15 +29,6 @@
         }
     }
 
-    &:active,
-    &:focus {
-        transform: translateY(0);
-
-        @include respond(tab-port) {
-            transform: none;
-        }
-    }
-
 
 
     &__text {

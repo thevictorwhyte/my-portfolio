@@ -369,11 +369,6 @@ body {
     @media (max-width: 56.25em) {
       .btn:hover {
         transform: none; } }
-  .btn:active, .btn:focus {
-    transform: translateY(0); }
-    @media (max-width: 56.25em) {
-      .btn:active, .btn:focus {
-        transform: none; } }
   .btn__text:link, .btn__text:visited {
     color: #000;
     display: inline-block;

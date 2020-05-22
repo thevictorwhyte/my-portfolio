@@ -555,6 +555,7 @@ body {
       position: relative;
       display: block;
       margin-top: 4.5rem;
+      margin-bottom: 1rem;
       text-align: center; } }
   @media (max-width: 56.25em) {
     .header {

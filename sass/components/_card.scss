@@ -11,27 +11,18 @@
     animation-timing-function: ease-out;
     animation-delay: .3s;
 
-    // @include respond(tab-port) {
-    //         transition: none;
-    // }
+    @include respond(laptop) {
+        &:hover {
+            transform: translateY(-2rem) scale(1.05);
+            background-color: $color-white;
+            box-shadow: 0 2rem 3rem rgba($color-black, .6);
     
-
-    &:hover {
-        transform: translateY(-2rem) scale(1.05);
-        background-color: $color-white;
-        box-shadow: 0 2rem 3rem rgba($color-black, .6);
-
-        .card__picture {
-            opacity: 1;
+            .card__picture {
+                opacity: 1;
+            }
         }
-        // @include respond(tab-port) {
-        //     transform: none;
-        //     box-shadow: 0 2rem 4rem rgba($color-black, .4);;
-        // }
-
     }
-
-
+    
     &__content {
         // display: block;
         width: 100%;
@@ -93,7 +84,6 @@
         display: block;
         //height: 4rem;
 
-        
     }
 
     &__text {

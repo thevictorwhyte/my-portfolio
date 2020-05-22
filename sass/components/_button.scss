@@ -20,13 +20,10 @@
         margin-right: 3rem;
     }
 
-    &:hover {
-        transform: translateY(-.5rem);
-
-        
-        // @include respond(tab-port) {
-        //     transform: none;
-        // }
+    @include respond(laptop) {
+        &:hover {
+            transform: translateY(-.5rem);
+        }
     }
 
 
@@ -64,21 +61,18 @@
             border: 1px solid $color-secondary;
         }
 
-        &:hover {
-            border: 2px solid $color-blue-dark;
-            color: $color-blue-dark;
-
-            @include respond(tab-port) {
-                border: 1px solid $color-blue-dark;
-            }
-        }
-
         // @include respond(laptop) {
-        //     &:hover {
-        //         border: 2px solid $color-blue-dark;
-        //         color: $color-blue-dark;
-        //     }
-        // }
+            &:hover {
+                border: 2px solid $color-blue-dark;
+                color: $color-blue-dark;
+
+                @include respond(tab-port) {
+                    border: 1px solid $color-blue-dark;
+                    color: $color-blue-dark;
+                }
+            }
+        //}
+
 
         &--header {
             font-size: 1rem;

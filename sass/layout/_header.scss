@@ -1,15 +1,30 @@
 .header {
-    @include clearfix;
+    //@include clearfix;
     background-color: $color-white;
     width: 100%;
     height: fit-content;
-    display: inline-block;
-    padding: 0;
+    //display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    // padding-bottom: 0;
     position: fixed;
     z-index: 100;
 
+    @include respond(tab-land) {
+        position: relative;
+        display: block;
+        margin-top: 4.5rem;
+        text-align: center;
+        //z-index:100;
+    }
+
     @include respond(tab-port) {
         position: relative;
+        display: block;
         margin-top: 3.5rem;
         text-align: center;
         //z-index:100;
@@ -20,19 +35,13 @@
     //     text-align: center;
     // }
 
-    &__logo-box {
-
-    }
-
-    &-logo{
-
-    }
 
     &__site-title {
         display: inline-block;
-        margin-bottom: 1.5rem;
-        margin-left: 1.5rem;
-        padding: 0;
+        padding-top: 1rem;
+        //margin-bottom: 1.5rem;
+        //margin-left: 1.5rem;
+        //padding-top: -.5rem;
 
     
     }
@@ -42,16 +51,17 @@
         font-weight: 300;
         text-decoration: none;
         text-transform: uppercase;
-        float: right;
-        position: absolute;
-        padding: 0;
-        top: 1.5rem;
-        right: 2rem;
+        //float: right;
+        //position: absolute;
+       padding-top: 1.5rem;
+        //top: 1.5rem;
+        //right: 1.5rem;
         color: $color-black;
         animation-name: fadeIn;
         animation-duration: 1s;
 
-        @include respond(tab-port) {
+
+        @include respond(tab-land) {
             float: none;
             width: 100%;
             padding-top: 2rem;
@@ -99,11 +109,12 @@
 
     &__social {
         display: inline-block;
-        margin-left: 5rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        padding-top: 1rem;
+        //margin-left: 5rem;
+        //position: absolute;
+        // top: 50%;
+        // left: 50%;
+        //transform: translate(-50%, -50%);
         transition: all .2s;
         animation-name: fadeIn;
         animation-duration: 1s;
@@ -114,7 +125,7 @@
         }
 
         &:hover {
-            transform: translate(-50%, -50%) scale(1.04);
+            transform: scale(1.04);
         }
     }
 

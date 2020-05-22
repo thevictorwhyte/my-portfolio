@@ -10,6 +10,10 @@
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-delay: .3s;
+
+    // @include respond(tab-port) {
+    //         transition: none;
+    // }
     
 
     &:hover {
@@ -20,12 +24,10 @@
         .card__picture {
             opacity: 1;
         }
-
-        @include respond(tab-port) {
-            transform: none;
-            background-color: inherit;
-            box-shadow: 0 2rem 4rem rgba($color-black, .4);
-        }
+        // @include respond(tab-port) {
+        //     transform: none;
+        //     box-shadow: 0 2rem 4rem rgba($color-black, .4);;
+        // }
 
     }
 

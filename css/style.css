@@ -101,7 +101,6 @@ body {
     animation-timing-function: ease-out;
     display: inline-block;
     transition: all .3s;
-    cursor: pointer;
     /*  animation-delay: 3s ; 
             animation-iteration-count: 3;
     
@@ -109,12 +108,10 @@ body {
     .heading-primary--main:hover {
       transform: rotate(3deg); }
   .heading-primary--seperator {
-    margin-right: .5rem;
     display: inline-block;
     animation: moveInRight 1s ease-out;
     transition: all .3s;
-    color: #f73030;
-    cursor: pointer; }
+    color: #f73030; }
     .heading-primary--seperator:hover {
       transform: translateY(-0.3rem); }
 
@@ -122,7 +119,7 @@ body {
   color: #041a30;
   text-transform: uppercase;
   backface-visibility: hidden;
-  display: block;
+  display: inline-block;
   transition: all .3s;
   font-size: 5rem;
   font-weight: 400;
@@ -149,8 +146,7 @@ body {
       color: #777; }
   .heading-secondary:hover {
     transform: scale(1.2);
-    color: #0066cc;
-    cursor: pointer; }
+    color: #0066cc; }
 
 .heading-tertiary {
   color: #041a30;
@@ -183,7 +179,7 @@ body {
       letter-spacing: .1rem; } }
 
 .paragraph {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 160%;
   color: #c2c2c2; }
@@ -293,11 +289,6 @@ body {
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6); }
     .card:hover .card__picture {
       opacity: 1; }
-    @media (max-width: 56.25em) {
-      .card:hover {
-        transform: none;
-        background-color: inherit;
-        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4); } }
   .card__content {
     width: 100%;
     height: 100%;
@@ -366,9 +357,6 @@ body {
     margin-right: 3rem; }
   .btn:hover {
     transform: translateY(-0.5rem); }
-    @media (max-width: 56.25em) {
-      .btn:hover {
-        transform: none; } }
   .btn__text:link, .btn__text:visited {
     color: #000;
     display: inline-block;
@@ -388,6 +376,15 @@ body {
     color: #f73030;
     transition: all .2s;
     font-size: 1.4rem; }
+    @media (max-width: 56.25em) {
+      .btn--card {
+        border: 1px solid #f73030; } }
+    .btn--card:hover {
+      border: 2px solid #061d35;
+      color: #061d35; }
+      @media (max-width: 56.25em) {
+        .btn--card:hover {
+          border: 1px solid #061d35; } }
     .btn--card--header {
       font-size: 1rem;
       border: 2px solid #f73030;
@@ -398,15 +395,6 @@ body {
       .btn--card--header:hover {
         border: 2px solid #061d35;
         color: #061d35; }
-        @media (max-width: 56.25em) {
-          .btn--card--header:hover {
-            border: 1px solid #061d35; } }
-    @media (max-width: 56.25em) {
-      .btn--card {
-        border: 1px solid #f73030; } }
-    .btn--card:hover {
-      border: 2px solid #061d35;
-      color: #061d35; }
 
 .skill-container {
   padding: 1rem;
@@ -418,7 +406,7 @@ body {
     list-style: none; }
     .skill-container ul li {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: 400;
       padding: 1rem; }
       @media (max-width: 56.25em) {
@@ -457,8 +445,7 @@ body {
   height: 3rem; }
 
 .social__link {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
   .social__link-2 {
     display: none; }
 
@@ -553,38 +540,38 @@ body {
   background-color: #fff;
   width: 100%;
   height: fit-content;
-  display: inline-block;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
   position: fixed;
   z-index: 100; }
-  .header::after {
-    content: "";
-    display: table;
-    clear: both; }
+  @media (max-width: 75em) {
+    .header {
+      position: relative;
+      display: block;
+      margin-top: 4.5rem;
+      text-align: center; } }
   @media (max-width: 56.25em) {
     .header {
       position: relative;
+      display: block;
       margin-top: 3.5rem;
       text-align: center; } }
   .header__site-title {
     display: inline-block;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    padding: 0; }
+    padding-top: 1rem; }
   .header__navigation {
     font-size: 1.35rem;
     font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
-    float: right;
-    position: absolute;
-    padding: 0;
-    top: 1.5rem;
-    right: 2rem;
+    padding-top: 1.5rem;
     color: #000;
     animation-name: fadeIn;
     animation-duration: 1s; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .header__navigation {
         float: none;
         width: 100%;
@@ -617,11 +604,7 @@ body {
             margin: 0 .5rem; } }
   .header__social {
     display: inline-block;
-    margin-left: 5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 1rem;
     transition: all .2s;
     animation-name: fadeIn;
     animation-duration: 1s; }
@@ -629,7 +612,7 @@ body {
       .header__social {
         display: none; } }
     .header__social:hover {
-      transform: translate(-50%, -50%) scale(1.04); }
+      transform: scale(1.04); }
 
 .section-projects {
   background-color: #eee;

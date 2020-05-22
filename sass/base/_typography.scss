@@ -30,7 +30,7 @@ body {
         animation-timing-function: ease-out;
         display: inline-block;
         transition: all .3s;
-        cursor: pointer;
+        //cursor: pointer;
 
 
         &:hover {
@@ -45,12 +45,12 @@ body {
     }
     
     &--seperator {
-        margin-right: .5rem;
+        //margin-right: .5rem;
         display: inline-block;
         animation: moveInRight 1s ease-out;
         transition: all .3s;
         color: $color-secondary;
-        cursor: pointer;
+        //cursor: pointer;
 
         &:hover {
             transform: translateY(-.3rem);
@@ -69,7 +69,7 @@ body {
     color: $color-blue-2;
     text-transform: uppercase;
     backface-visibility: hidden;
-    display: block;
+    display: inline-block;
     transition: all .3s;
     font-size: 5rem;
     font-weight: 400;
@@ -105,7 +105,7 @@ body {
         transform: scale(1.2);
         color: $color-blue;
         //border-bottom: 1px solid $color-blue;
-        cursor: pointer;
+        //cursor: pointer;
     }
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .paragraph {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 400;
     line-height: 160%;
     color: $color-grey-4;

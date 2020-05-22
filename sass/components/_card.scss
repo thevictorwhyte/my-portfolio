@@ -24,7 +24,6 @@
     }
     
     &__content {
-        // display: block;
         width: 100%;
         height: 100%;
         display: flex;
@@ -35,7 +34,6 @@
 
     &__picture {
         background-size: cover;
-        //background-blend-mode: screen;
         background-position: center;
         height: 22rem;
         opacity: .8;
@@ -66,10 +64,6 @@
             
         }
 
-        // &--6 {
-        //     background-image: url(../img/robofriends.png);
-            
-        // }
     }
 
     &__heading {
@@ -82,7 +76,6 @@
         text-align: center;
         color: $color-blue-dark;
         display: block;
-        //height: 4rem;
 
     }
 
@@ -101,15 +94,11 @@
         margin: 2rem 0;
         font-size: 1.4rem;
         margin: 1rem 0;
-        //height: 8rem;
     }
 
     &__buttons {
         display: block;
         text-align: center;
-        //height: 6rem;
-        // width: 6rem;
-        
     }
 
 }

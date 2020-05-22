@@ -66,13 +66,16 @@ html {
   scroll-behavior: smooth; }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 56.25%;
+      scroll-behavior: smooth; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 50%;
+      scroll-behavior: smooth; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 75%;
+      scroll-behavior: smooth; } }
 
 body {
   box-sizing: border-box; }
@@ -100,11 +103,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
     display: inline-block;
-    transition: all .3s;
-    /*  animation-delay: 3s ; 
-            animation-iteration-count: 3;
-    
-        */ }
+    transition: all .3s; }
     .heading-primary--main:hover {
       transform: rotate(3deg); }
   .heading-primary--seperator {
@@ -475,29 +474,6 @@ body {
           color: #f73030; }
   .footer__list {
     text-align: center; }
-
-.specialrow {
-  max-width: 100%;
-  margin: 0; }
-  .specialrow:not(:last-child) {
-    margin-bottom: 8rem; }
-  .specialrow::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .specialrow [class^="specialcol-"] {
-    float: left; }
-    .specialrow [class^="specialcol-"]:not(:last-child) {
-      margin-right: 4rem; }
-      @media (max-width: 56.25em) {
-        .specialrow [class^="specialcol-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .specialrow [class^="specialcol-"] {
-        max-width: 50rem; } }
-  .specialrow .specialcol-1-of-3 {
-    width: calc((100% - 2 * 4rem) / 3); }
 
 .row {
   max-width: 114rem;
